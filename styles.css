@@ -1,0 +1,205 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #fdf6f0; /* Soft background color */
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('./pexels.jpg'); /* Use the provided image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: blur(8px); Apply blur effect */
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile-icon, .notification-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding a shadow */
+    transition: transform 0.3s;
+}
+
+.profile-icon:hover, .notification-icon:hover {
+    transform: scale(1.1); /* Slight scaling on hover */
+}
+
+.shield-banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); /* Adding shadow */
+}
+
+.shield-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #33ff74, #33ffa0); /* Gradient background */
+    border-radius: 20px;
+    z-index: 1;
+    opacity: 0.9; /* Adjust opacity */
+}
+
+.shield-icon {
+    position: relative;
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    animation: bounce 2s infinite;
+    filter: drop-shadow(0 0 10px #833ab4); /* Adding a glow effect */
+}
+
+.buttons {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(to bottom,  #f30505, #833ab4);
+    border-radius: 15px;
+    transition: transform 0.3s, background 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); /* Adding shadow */
+}
+
+.button:hover {
+    background: linear-gradient(to bottom, #fd1d1d, #833ab4, #fcb045);
+    transform: scale(1.1);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+/* .nav-item {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045);
+    border-radius: 50%;
+    transition: transform 0.3s, background 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow */
+/* } */
+
+/* .nav-item:hover { */
+    /* background: linear-gradient(to bottom, #fd1d1d, #fcb045, #833ab4); */
+    /* transform: scale(1.1); */
+/* } */ 
+.button, .nav-item {
+    position: relative;
+    width: 80px; /* Ensure enough space for icon and text */
+    height: 80px;
+    background: linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);
+    border-radius: 15px;
+    transition: transform 0.3s, background 0.3s;
+    display: flex;
+    flex-direction: column; /* Arrange icon and text vertically */
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); /* Adding shadow */
+}
+
+.button i, .nav-item i {
+    font-size: 30px; /* Icon size */
+}
+
+.button span, .nav-item span {
+    font-size: 14px; /* Text size */
+    margin-top: 5px; /* Space between icon and text */
+    color: #fff; /* Text color */
+    text-align: center;
+}
+
+.button:hover, .nav-item:hover {
+    background: linear-gradient(to bottom, #fd1d1d, #833ab4, #fcb045);
+    transform: scale(1.1);
+}
+
+/* Animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.contact-us {
+    text-align: center;
+    padding: 20px;
+    /* background: #f0f0f0; */
+    background: linear-gradient(135deg, #ffb347, #ffcc33, #ff5733);
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Adding shadow */
+}
+
+.contact-us h3 {
+    margin-bottom: 10px;
+}
+
+.contact-us p {
+    margin: 5px 0;
+}
