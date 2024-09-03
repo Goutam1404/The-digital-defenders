@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #ff1493; /* Pink shade */
+    color: #fff;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+    padding: 20px;
+    background-color: #ff69b4; /* Light pink */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px; /* Add gap between buttons */
+}
+
+.button:hover {
+    background-color: #ff1493;
+}
+
+.button i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer .nav-item {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer .nav-item i {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .button-row {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
+        margin-bottom: 20px; /* Ensure gap is consistent on mobile */
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .nav-item {
+        margin-bottom: 10px;
+    }
+}
