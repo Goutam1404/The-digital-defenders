@@ -3,26 +3,43 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fdfafa;
 }
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #ff1493; /* Pink shade */
-    color: #fff;
+    padding: 0px 20px;
+    color: #0a0a0a;
+   
 }
 
 .container {
-    padding: 20px;
+    padding: 6px;
     text-align: center;
 }
+
 
 .button-row {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
+    gap:30px;
+    
+   
+}
+
+.profile-icon{
+    display:flex;
+}
+.notification-icon{
+    display:flex;
+    justify-content: right;
+    
+}
+.shield-icon{
+    height: 211px;
+    width: 960px;
 }
 
 .button {
@@ -32,29 +49,36 @@ header {
     justify-content: center;
     width: 48%;
     padding: 20px;
-    background-color: #ff69b4; /* Light pink */
+    background: linear-gradient(to bottom, violet, rgb(238, 238, 3)); /* Light pink */
     color: #fff;
     text-decoration: none;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
+    border-radius: 50px;
+    transition: background 0.3s ease; /* Transition the entire background */
     margin-bottom: 20px; /* Add gap between buttons */
+    box-shadow: 0 6px 10px rgba(153, 151, 153, 0.4); /* Add shadow */
 }
 
 .button:hover {
-    background-color: #ff1493;
+    background-color: #8a888a;
+    box-shadow: none;
+    transition-delay: .2s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: .4s;
 }
 
 .button i {
     font-size: 24px;
     margin-bottom: 10px;
+
 }
 
 .footer {
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
-    background-color: #333;
+    background-color: #911487;
     color: #fff;
+    border-radius: 50px;
 }
 
 .footer .nav-item {
